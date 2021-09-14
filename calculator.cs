@@ -16,18 +16,7 @@ namespace Calculator
             Console.WriteLine("The sum of the number is: "+ sum);
             return sum;
         }
-        public static int sub()
-        {
-            Console.Write("Enter first number:");
-            string val1 = Console.ReadLine();
-            int num1 = Int32.Parse(val1);
-            Console.Write("Enter second number:");
-            string val2 = Console.ReadLine();
-            int num2 = Int32.Parse(val2);
-            int difference = num1 - num2;
-            Console.WriteLine("The difference of the number is: " + difference);
-            return difference;
-        }
+        
         public static int product()
         {
             Console.Write("Enter first number:");
@@ -60,10 +49,7 @@ namespace Calculator
             {
                 add();
             }
-            else if (operation.Equals("substract"))
-            {
-                sub();
-            }
+            
             else if (operation.Equals("multiply"))
             {
                 product();
